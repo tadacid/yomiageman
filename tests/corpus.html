@@ -1,0 +1,31 @@
+<!doctype html><html lang="ja"><meta charset="utf-8"><title>OCR未使用文章の比較</title><h1>OCR未使用文章の比較</h1><pre id="progress">実行中</pre><pre id="summary"></pre><pre id="results"></pre><script type="module">
+import {LocalReader} from '/src/ocr.js';
+import {LocalReader as PreviousReader} from '/__v03/src/ocr.js';
+const current=new LocalReader(),previous=new PreviousReader();previous.correctKana=false;
+const normalize=text=>text.normalize('NFKC').replace(/\s+/g,'');
+function distance(a,b){a=[...normalize(a)];b=[...normalize(b)];let row=Array.from({length:b.length+1},(_,i)=>i);for(let i=1;i<=a.length;i++){const next=[i];for(let j=1;j<=b.length;j++)next[j]=Math.min(next[j-1]+1,row[j]+1,row[j-1]+(a[i-1]===b[j-1]?0:1));row=next;}return row[b.length];}
+const results=[];
+async function verify(id,canvas,expected){
+ const beforeStart=performance.now(),before=await previous.recognize(canvas),beforeMs=Math.round(performance.now()-beforeStart);
+ const afterStart=performance.now(),after=await current.recognize(canvas),afterMs=Math.round(performance.now()-afterStart);
+ results.push({id,expected,before:before.text,after:after.text,beforeErrors:distance(expected,before.text),afterErrors:distance(expected,after.text),beforeMs,afterMs});
+ document.querySelector('#progress').textContent=`${results.length}件完了`;
+ document.querySelector('#results').textContent=JSON.stringify(results,null,2);
+}
+try{
+ const image=new Image();image.src='./heldout.png';await image.decode();
+ for(const width of [1920,960]){
+  const canvas=document.createElement('canvas');canvas.width=width;canvas.height=width*image.height/image.width;canvas.getContext('2d').drawImage(image,0,0,canvas.width,canvas.height);
+  await verify(`heldout-official-${width}`,canvas,'ウチの背中のタネもね大きくなったら咲くんだよー！');
+ }
+ const sentences=['しゅっぱつのじゅんびはできた？','ちょうちょを見つけたよ。','きってをはろう。','きつねがいるよ。','つよいかぜだね。','きょうはいい日だね。','きようにつくるね。','おもちゃをかたづけよう。','ポッチャマとカイリュー','きのみを10こあつめよう。','ここにいいものがあるよ！','いつしようか？','きゅうりをきってね。','しっぽがぴょんとはねた。','りゅうのいるばしょへ行こう。','キャベツとキュウリをそだてよう。','ラッキーにあったよ。','よっつのはっぱをひろった。','チョコレートをちょっとだけ。','シャワーをあびてきたよ。','あしたはつりに行こう。','コップにみずをいれよう。','パンをゆっくりやこう。','ジュースをいっぽんください。'];
+ const holdout=['ベッドでぐっすりねむったよ。','きゃくしゃにのってしゅっぱつ！','リュックにクッキーをいれよう。','ミュウとニャースをさがそう。','りょうりをいっしょにつくろう。','おおきなコップとちいさなカップ。','シャツをぬいでゆっくりやすもう。','かっぱがきゅうりをもっている。','あっちにちっちゃなはながあるよ。','ロボットがジャンプしたよ。','よるになったらほしをみよう。','つきのひかりがとどくよ。'];
+ for(const font of ['sans-serif','serif'])for(const size of [28,36])for(const sentence of [...sentences,...holdout]){
+  const canvas=document.createElement('canvas');canvas.width=1280;canvas.height=720;const ctx=canvas.getContext('2d');
+  ctx.fillStyle='#8aab78';ctx.fillRect(0,0,1280,720);ctx.fillStyle='#bb9ee8';ctx.beginPath();ctx.roundRect(220,530,840,180,60);ctx.fill();ctx.fillStyle='#fafafa';ctx.beginPath();ctx.roundRect(235,545,810,150,50);ctx.fill();ctx.fillStyle='#303638';ctx.font=`${size}px ${font}`;ctx.fillText(sentence,275,615);
+  await verify(`${holdout.includes(sentence)?'holdout-synthetic':'synthetic'}-${font}-${size}-${sentence}`,canvas,sentence);
+ }
+ const summary={};for(const type of ['heldout-official','synthetic','holdout-synthetic']){const rows=results.filter(r=>r.id.startsWith(type));summary[type]={count:rows.length,beforeExact:rows.filter(r=>!r.beforeErrors).length,afterExact:rows.filter(r=>!r.afterErrors).length,beforeErrors:rows.reduce((s,r)=>s+r.beforeErrors,0),afterErrors:rows.reduce((s,r)=>s+r.afterErrors,0),regressions:rows.filter(r=>r.afterErrors>r.beforeErrors).map(r=>r.id)};}
+ document.querySelector('#summary').textContent=JSON.stringify(summary,null,2);document.body.dataset.complete='true';
+}catch(error){document.querySelector('#progress').textContent=error.stack;document.body.dataset.complete='error';}
+</script></html>

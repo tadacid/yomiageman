@@ -1,0 +1,1 @@
+{"id":"./","name":"よみあげマン","short_name":"よみあげマン","description":"ゲームのセリフを自動で読み上げるカメラアプリ","lang":"ja","start_url":"./","scope":"./","display":"standalone","background_color":"#f6f3ea","theme_color":"#f6f3ea","icons":[{"src":"./icons/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any"}]}

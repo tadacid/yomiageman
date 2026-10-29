@@ -1,0 +1,16 @@
+<!doctype html><meta charset="utf-8"><h1>OCR入力サイズの比較</h1><pre id="results">実行中</pre><script type="module">
+import {LocalReader} from '/src/ocr.js';
+const reader=new LocalReader(),original=new Image();original.src='./reference.webp';await original.decode();const results=[];
+for(const height of [14,16,18,20,22,24]) for(const scenario of ['original','portrait-offset','small-screen','tilted']){
+ reader.inkHeight=height;
+ const canvas=document.createElement('canvas');canvas.width=scenario==='portrait-offset'?1080:1280;canvas.height=scenario==='portrait-offset'?1920:720;
+ if(scenario==='original'){canvas.width=original.width;canvas.height=original.height;}
+ const ctx=canvas.getContext('2d');ctx.fillStyle='#252d29';ctx.fillRect(0,0,canvas.width,canvas.height);
+ if(scenario==='original')ctx.drawImage(original,0,0);
+ if(scenario==='portrait-offset')ctx.drawImage(original,60,600,960,540);
+ if(scenario==='small-screen')ctx.drawImage(original,230,170,820,461);
+ if(scenario==='tilted'){ctx.translate(640,360);ctx.rotate(4*Math.PI/180);ctx.drawImage(original,-560,-315,1120,630);}
+ const result=await reader.recognize(canvas);results.push({height,scenario,text:result.text,confidence:result.confidence});document.querySelector('#results').textContent=JSON.stringify(results,null,2);
+}
+document.body.dataset.complete='true';
+</script>

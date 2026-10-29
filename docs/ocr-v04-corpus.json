@@ -1,0 +1,1496 @@
+{
+  "summary": {
+    "heldout-official": {
+      "count": 2,
+      "beforeExact": 1,
+      "afterExact": 2,
+      "beforeErrors": 2,
+      "afterErrors": 0,
+      "regressions": []
+    },
+    "synthetic": {
+      "count": 96,
+      "beforeExact": 94,
+      "afterExact": 94,
+      "beforeErrors": 15,
+      "afterErrors": 15,
+      "regressions": []
+    },
+    "holdout-synthetic": {
+      "count": 48,
+      "beforeExact": 45,
+      "afterExact": 43,
+      "beforeErrors": 3,
+      "afterErrors": 5,
+      "regressions": [
+        "holdout-synthetic-serif-28-ミュウとニャースをさがそう。",
+        "holdout-synthetic-serif-28-かっぱがきゅうりをもっている。",
+        "holdout-synthetic-serif-36-ミュウとニャースをさがそう。",
+        "holdout-synthetic-serif-36-りょうりをいっしょにつくろう。",
+        "holdout-synthetic-serif-36-かっぱがきゅうりをもっている。"
+      ]
+    }
+  },
+  "results": [
+    {
+      "id": "heldout-official-1920",
+      "expected": "ウチの背中のタネもね大きくなったら咲くんだよー！",
+      "before": "ウチの背中のタネもね\n大きくなったら咲くんだよー!",
+      "after": "ウチの背中のタネもね\n大きくなったら咲くんだよー!",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 1213,
+      "afterMs": 1558
+    },
+    {
+      "id": "heldout-official-960",
+      "expected": "ウチの背中のタネもね大きくなったら咲くんだよー！",
+      "before": "ウチの背中のタネもね\n大きくなつたら咲くんだよ!",
+      "after": "ウチの背中のタネもね\n大きくなったら咲くんだよー!",
+      "beforeErrors": 2,
+      "afterErrors": 0,
+      "beforeMs": 167,
+      "afterMs": 274
+    },
+    {
+      "id": "synthetic-sans-serif-28-しゅっぱつのじゅんびはできた？",
+      "expected": "しゅっぱつのじゅんびはできた？",
+      "before": "しゅっぱつのじゅんびはできた?",
+      "after": "しゅっぱつのじゅんびはできた?",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 104,
+      "afterMs": 150
+    },
+    {
+      "id": "synthetic-sans-serif-28-ちょうちょを見つけたよ。",
+      "expected": "ちょうちょを見つけたよ。",
+      "before": "ちょうちょを見つけたよ。",
+      "after": "ちょうちょを見つけたよ。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 76,
+      "afterMs": 126
+    },
+    {
+      "id": "synthetic-sans-serif-28-きってをはろう。",
+      "expected": "きってをはろう。",
+      "before": "きってをはろう。",
+      "after": "きってをはろう。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 64,
+      "afterMs": 116
+    },
+    {
+      "id": "synthetic-sans-serif-28-きつねがいるよ。",
+      "expected": "きつねがいるよ。",
+      "before": "きつねがいるよ。",
+      "after": "きつねがいるよ。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 66,
+      "afterMs": 93
+    },
+    {
+      "id": "synthetic-sans-serif-28-つよいかぜだね。",
+      "expected": "つよいかぜだね。",
+      "before": "つよいかぜだね。",
+      "after": "つよいかぜだね。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 58,
+      "afterMs": 92
+    },
+    {
+      "id": "synthetic-sans-serif-28-きょうはいい日だね。",
+      "expected": "きょうはいい日だね。",
+      "before": "きょうはいい日だね。",
+      "after": "きょうはいい日だね。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 61,
+      "afterMs": 109
+    },
+    {
+      "id": "synthetic-sans-serif-28-きようにつくるね。",
+      "expected": "きようにつくるね。",
+      "before": "きようにつくるね。",
+      "after": "きようにつくるね。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 60,
+      "afterMs": 104
+    },
+    {
+      "id": "synthetic-sans-serif-28-おもちゃをかたづけよう。",
+      "expected": "おもちゃをかたづけよう。",
+      "before": "おもちゃをかたづけよう。",
+      "after": "おもちゃをかたづけよう。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 75,
+      "afterMs": 118
+    },
+    {
+      "id": "synthetic-sans-serif-28-ポッチャマとカイリュー",
+      "expected": "ポッチャマとカイリュー",
+      "before": "ポッチャマとカイリュー",
+      "after": "ポッチャマとカイリュー",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 69,
+      "afterMs": 110
+    },
+    {
+      "id": "synthetic-sans-serif-28-きのみを10こあつめよう。",
+      "expected": "きのみを10こあつめよう。",
+      "before": "きのみを10こあつめよう。",
+      "after": "きのみを10こあつめよう。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 80,
+      "afterMs": 129
+    },
+    {
+      "id": "synthetic-sans-serif-28-ここにいいものがあるよ！",
+      "expected": "ここにいいものがあるよ！",
+      "before": "ここにいいものがあるよ!",
+      "after": "ここにいいものがあるよ!",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 75,
+      "afterMs": 131
+    },
+    {
+      "id": "synthetic-sans-serif-28-いつしようか？",
+      "expected": "いつしようか？",
+      "before": "いつしようか?",
+      "after": "いつしようか?",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 56,
+      "afterMs": 84
+    },
+    {
+      "id": "synthetic-sans-serif-28-きゅうりをきってね。",
+      "expected": "きゅうりをきってね。",
+      "before": "きゅうりをきってね。",
+      "after": "きゅうりをきってね。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 70,
+      "afterMs": 135
+    },
+    {
+      "id": "synthetic-sans-serif-28-しっぽがぴょんとはねた。",
+      "expected": "しっぽがぴょんとはねた。",
+      "before": "しっぽがぴょんとはねた。",
+      "after": "しっぽがぴょんとはねた。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 73,
+      "afterMs": 125
+    },
+    {
+      "id": "synthetic-sans-serif-28-りゅうのいるばしょへ行こう。",
+      "expected": "りゅうのいるばしょへ行こう。",
+      "before": "りゅうのいるばしょへ行こう。",
+      "after": "りゅうのいるばしょへ行こう。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 78,
+      "afterMs": 128
+    },
+    {
+      "id": "synthetic-sans-serif-28-キャベツとキュウリをそだてよう。",
+      "expected": "キャベツとキュウリをそだてよう。",
+      "before": "キャベツとキュウリをそだてよう。",
+      "after": "キャベツとキュウリをそだてよう。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 90,
+      "afterMs": 151
+    },
+    {
+      "id": "synthetic-sans-serif-28-ラッキーにあったよ。",
+      "expected": "ラッキーにあったよ。",
+      "before": "ラッキーにあったよ。",
+      "after": "ラッキーにあったよ。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 65,
+      "afterMs": 106
+    },
+    {
+      "id": "synthetic-sans-serif-28-よっつのはっぱをひろった。",
+      "expected": "よっつのはっぱをひろった。",
+      "before": "よっつのはっぱをひろった。",
+      "after": "よっつのはっぱをひろった。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 73,
+      "afterMs": 123
+    },
+    {
+      "id": "synthetic-sans-serif-28-チョコレートをちょっとだけ。",
+      "expected": "チョコレートをちょっとだけ。",
+      "before": "チョコレートをちょっとだけ。",
+      "after": "チョコレートをちょっとだけ。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 84,
+      "afterMs": 139
+    },
+    {
+      "id": "synthetic-sans-serif-28-シャワーをあびてきたよ。",
+      "expected": "シャワーをあびてきたよ。",
+      "before": "シャワーをあびてきたよ。",
+      "after": "シャワーをあびてきたよ。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 76,
+      "afterMs": 124
+    },
+    {
+      "id": "synthetic-sans-serif-28-あしたはつりに行こう。",
+      "expected": "あしたはつりに行こう。",
+      "before": "あしたはつりに行こう。",
+      "after": "あしたはつりに行こう。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 70,
+      "afterMs": 113
+    },
+    {
+      "id": "synthetic-sans-serif-28-コップにみずをいれよう。",
+      "expected": "コップにみずをいれよう。",
+      "before": "コップにみずをいれよう。",
+      "after": "コップにみずをいれよう。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 71,
+      "afterMs": 119
+    },
+    {
+      "id": "synthetic-sans-serif-28-パンをゆっくりやこう。",
+      "expected": "パンをゆっくりやこう。",
+      "before": "パンをゆっくりやこう。",
+      "after": "パンをゆっくりやこう。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 67,
+      "afterMs": 113
+    },
+    {
+      "id": "synthetic-sans-serif-28-ジュースをいっぽんください。",
+      "expected": "ジュースをいっぽんください。",
+      "before": "ジュースをいっぽんください。",
+      "after": "ジュースをいっぽんください。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 81,
+      "afterMs": 135
+    },
+    {
+      "id": "holdout-synthetic-sans-serif-28-ベッドでぐっすりねむったよ。",
+      "expected": "ベッドでぐっすりねむったよ。",
+      "before": "ベッドでぐっすりねむったよ。",
+      "after": "ベッドでぐっすりねむったよ。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 84,
+      "afterMs": 139
+    },
+    {
+      "id": "holdout-synthetic-sans-serif-28-きゃくしゃにのってしゅっぱつ！",
+      "expected": "きゃくしゃにのってしゅっぱつ！",
+      "before": "きゃくしゃにのってしゅっぱつ!",
+      "after": "きゃくしゃにのってしゅっぱつ!",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 85,
+      "afterMs": 138
+    },
+    {
+      "id": "holdout-synthetic-sans-serif-28-リュックにクッキーをいれよう。",
+      "expected": "リュックにクッキーをいれよう。",
+      "before": "リュックにクッキーをいれよう。",
+      "after": "リュックにクッキーをいれよう。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 88,
+      "afterMs": 143
+    },
+    {
+      "id": "holdout-synthetic-sans-serif-28-ミュウとニャースをさがそう。",
+      "expected": "ミュウとニャースをさがそう。",
+      "before": "ミュウとニャースをさがそう。",
+      "after": "ミュウとニャースをさがそう。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 80,
+      "afterMs": 137
+    },
+    {
+      "id": "holdout-synthetic-sans-serif-28-りょうりをいっしょにつくろう。",
+      "expected": "りょうりをいっしょにつくろう。",
+      "before": "りょうりをいっしょにつくろう。",
+      "after": "りょうりをいっしょにつくろう。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 86,
+      "afterMs": 144
+    },
+    {
+      "id": "holdout-synthetic-sans-serif-28-おおきなコップとちいさなカップ。",
+      "expected": "おおきなコップとちいさなカップ。",
+      "before": "おおきなコップとちいさなカップ。",
+      "after": "おおきなコップとちいさなカップ。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 87,
+      "afterMs": 144
+    },
+    {
+      "id": "holdout-synthetic-sans-serif-28-シャツをぬいでゆっくりやすもう。",
+      "expected": "シャツをぬいでゆっくりやすもう。",
+      "before": "シャツをぬいでゆっくりやすもう。",
+      "after": "シャツをぬいでゆっくりやすもう。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 92,
+      "afterMs": 153
+    },
+    {
+      "id": "holdout-synthetic-sans-serif-28-かっぱがきゅうりをもっている。",
+      "expected": "かっぱがきゅうりをもっている。",
+      "before": "かっぱがきゅうりをもっている。",
+      "after": "かっぱがきゅうりをもっている。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 86,
+      "afterMs": 134
+    },
+    {
+      "id": "holdout-synthetic-sans-serif-28-あっちにちっちゃなはながあるよ。",
+      "expected": "あっちにちっちゃなはながあるよ。",
+      "before": "あっちにちっちゃなはながあるよ。",
+      "after": "あっちにちっちゃなはながあるよ。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 93,
+      "afterMs": 150
+    },
+    {
+      "id": "holdout-synthetic-sans-serif-28-ロボットがジャンプしたよ。",
+      "expected": "ロボットがジャンプしたよ。",
+      "before": "ロボットがジャンプしたよ。",
+      "after": "ロボットがジャンプしたよ。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 76,
+      "afterMs": 117
+    },
+    {
+      "id": "holdout-synthetic-sans-serif-28-よるになったらほしをみよう。",
+      "expected": "よるになったらほしをみよう。",
+      "before": "よるになったらほしをみよう。",
+      "after": "よるになったらほしをみよう。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 86,
+      "afterMs": 132
+    },
+    {
+      "id": "holdout-synthetic-sans-serif-28-つきのひかりがとどくよ。",
+      "expected": "つきのひかりがとどくよ。",
+      "before": "つきのひかりがとどくよ。",
+      "after": "つきのひかりがとどくよ。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 76,
+      "afterMs": 113
+    },
+    {
+      "id": "synthetic-sans-serif-36-しゅっぱつのじゅんびはできた？",
+      "expected": "しゅっぱつのじゅんびはできた？",
+      "before": "しゅっぱつのじゅんびはできた?",
+      "after": "しゅっぱつのじゅんびはできた?",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 88,
+      "afterMs": 136
+    },
+    {
+      "id": "synthetic-sans-serif-36-ちょうちょを見つけたよ。",
+      "expected": "ちょうちょを見つけたよ。",
+      "before": "ちょうちょを見つけたよ。",
+      "after": "ちょうちょを見つけたよ。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 72,
+      "afterMs": 116
+    },
+    {
+      "id": "synthetic-sans-serif-36-きってをはろう。",
+      "expected": "きってをはろう。",
+      "before": "きってをはろう。",
+      "after": "きってをはろう。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 55,
+      "afterMs": 92
+    },
+    {
+      "id": "synthetic-sans-serif-36-きつねがいるよ。",
+      "expected": "きつねがいるよ。",
+      "before": "きつねがいるよ。",
+      "after": "きつねがいるよ。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 50,
+      "afterMs": 87
+    },
+    {
+      "id": "synthetic-sans-serif-36-つよいかぜだね。",
+      "expected": "つよいかぜだね。",
+      "before": "つよいかぜだね。",
+      "after": "つよいかぜだね。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 49,
+      "afterMs": 88
+    },
+    {
+      "id": "synthetic-sans-serif-36-きょうはいい日だね。",
+      "expected": "きょうはいい日だね。",
+      "before": "きょうはいい日だね。",
+      "after": "きょうはいい日だね。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 65,
+      "afterMs": 147
+    },
+    {
+      "id": "synthetic-sans-serif-36-きようにつくるね。",
+      "expected": "きようにつくるね。",
+      "before": "きようにつくるね。",
+      "after": "きようにつくるね。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 59,
+      "afterMs": 94
+    },
+    {
+      "id": "synthetic-sans-serif-36-おもちゃをかたづけよう。",
+      "expected": "おもちゃをかたづけよう。",
+      "before": "おもちゃをかたづけよう。",
+      "after": "おもちゃをかたづけよう。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 75,
+      "afterMs": 119
+    },
+    {
+      "id": "synthetic-sans-serif-36-ポッチャマとカイリュー",
+      "expected": "ポッチャマとカイリュー",
+      "before": "ポッチャマとカイリュー",
+      "after": "ポッチャマとカイリュー",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 71,
+      "afterMs": 116
+    },
+    {
+      "id": "synthetic-sans-serif-36-きのみを10こあつめよう。",
+      "expected": "きのみを10こあつめよう。",
+      "before": "きのみを10こあつめよう。",
+      "after": "きのみを10こあつめよう。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 79,
+      "afterMs": 118
+    },
+    {
+      "id": "synthetic-sans-serif-36-ここにいいものがあるよ！",
+      "expected": "ここにいいものがあるよ！",
+      "before": "ここにいいものがあるよ!",
+      "after": "ここにいいものがあるよ!",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 74,
+      "afterMs": 124
+    },
+    {
+      "id": "synthetic-sans-serif-36-いつしようか？",
+      "expected": "いつしようか？",
+      "before": "いつしようか?",
+      "after": "いつしようか?",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 51,
+      "afterMs": 84
+    },
+    {
+      "id": "synthetic-sans-serif-36-きゅうりをきってね。",
+      "expected": "きゅうりをきってね。",
+      "before": "きゅうりをきってね。",
+      "after": "きゅうりをきってね。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 63,
+      "afterMs": 100
+    },
+    {
+      "id": "synthetic-sans-serif-36-しっぽがぴょんとはねた。",
+      "expected": "しっぽがぴょんとはねた。",
+      "before": "しっぽがぴょんとはねた。",
+      "after": "しっぽがぴょんとはねた。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 71,
+      "afterMs": 110
+    },
+    {
+      "id": "synthetic-sans-serif-36-りゅうのいるばしょへ行こう。",
+      "expected": "りゅうのいるばしょへ行こう。",
+      "before": "りゅうのいるばしょへ行こう。",
+      "after": "りゅうのいるばしょへ行こう。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 80,
+      "afterMs": 128
+    },
+    {
+      "id": "synthetic-sans-serif-36-キャベツとキュウリをそだてよう。",
+      "expected": "キャベツとキュウリをそだてよう。",
+      "before": "キャベツとキュウリをそだてよう。",
+      "after": "キャベツとキュウリをそだてよう。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 91,
+      "afterMs": 145
+    },
+    {
+      "id": "synthetic-sans-serif-36-ラッキーにあったよ。",
+      "expected": "ラッキーにあったよ。",
+      "before": "ラッキーにあったよ。",
+      "after": "ラッキーにあったよ。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 65,
+      "afterMs": 102
+    },
+    {
+      "id": "synthetic-sans-serif-36-よっつのはっぱをひろった。",
+      "expected": "よっつのはっぱをひろった。",
+      "before": "よっつのはっぱをひろった。",
+      "after": "よっつのはっぱをひろった。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 71,
+      "afterMs": 122
+    },
+    {
+      "id": "synthetic-sans-serif-36-チョコレートをちょっとだけ。",
+      "expected": "チョコレートをちょっとだけ。",
+      "before": "チョコレートをちょっとだけ。",
+      "after": "チョコレートをちょっとだけ。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 80,
+      "afterMs": 134
+    },
+    {
+      "id": "synthetic-sans-serif-36-シャワーをあびてきたよ。",
+      "expected": "シャワーをあびてきたよ。",
+      "before": "シャワーをあびてきたよ。",
+      "after": "シャワーをあびてきたよ。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 70,
+      "afterMs": 118
+    },
+    {
+      "id": "synthetic-sans-serif-36-あしたはつりに行こう。",
+      "expected": "あしたはつりに行こう。",
+      "before": "あしたはつりに行こう。",
+      "after": "あしたはつりに行こう。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 72,
+      "afterMs": 113
+    },
+    {
+      "id": "synthetic-sans-serif-36-コップにみずをいれよう。",
+      "expected": "コップにみずをいれよう。",
+      "before": "コップにみずをいれよう。",
+      "after": "コップにみずをいれよう。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 69,
+      "afterMs": 115
+    },
+    {
+      "id": "synthetic-sans-serif-36-パンをゆっくりやこう。",
+      "expected": "パンをゆっくりやこう。",
+      "before": "パンをゆっくりやこう。",
+      "after": "パンをゆっくりやこう。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 69,
+      "afterMs": 115
+    },
+    {
+      "id": "synthetic-sans-serif-36-ジュースをいっぽんください。",
+      "expected": "ジュースをいっぽんください。",
+      "before": "ジュースをいっぽんください。",
+      "after": "ジュースをいっぽんください。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 79,
+      "afterMs": 136
+    },
+    {
+      "id": "holdout-synthetic-sans-serif-36-ベッドでぐっすりねむったよ。",
+      "expected": "ベッドでぐっすりねむったよ。",
+      "before": "ベッドでぐっすりねむったよ。",
+      "after": "ベッドでぐっすりねむったよ。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 83,
+      "afterMs": 133
+    },
+    {
+      "id": "holdout-synthetic-sans-serif-36-きゃくしゃにのってしゅっぱつ！",
+      "expected": "きゃくしゃにのってしゅっぱつ！",
+      "before": "きゃくしゃにのってしゅっぱつ!",
+      "after": "きゃくしゃにのってしゅっぱつ!",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 83,
+      "afterMs": 134
+    },
+    {
+      "id": "holdout-synthetic-sans-serif-36-リュックにクッキーをいれよう。",
+      "expected": "リュックにクッキーをいれよう。",
+      "before": "リュックにクッキーをいれよう。",
+      "after": "リュックにクッキーをいれよう。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 89,
+      "afterMs": 141
+    },
+    {
+      "id": "holdout-synthetic-sans-serif-36-ミュウとニャースをさがそう。",
+      "expected": "ミュウとニャースをさがそう。",
+      "before": "ミュウとニャースをさがそう。",
+      "after": "ミュウとニャースをさがそう。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 82,
+      "afterMs": 132
+    },
+    {
+      "id": "holdout-synthetic-sans-serif-36-りょうりをいっしょにつくろう。",
+      "expected": "りょうりをいっしょにつくろう。",
+      "before": "りょうりをいっしょにつくろう。",
+      "after": "りょうりをいっしょにつくろう。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 86,
+      "afterMs": 144
+    },
+    {
+      "id": "holdout-synthetic-sans-serif-36-おおきなコップとちいさなカップ。",
+      "expected": "おおきなコップとちいさなカップ。",
+      "before": "おおきなコップとちいさなカップ。",
+      "after": "おおきなコップとちいさなカップ。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 88,
+      "afterMs": 143
+    },
+    {
+      "id": "holdout-synthetic-sans-serif-36-シャツをぬいでゆっくりやすもう。",
+      "expected": "シャツをぬいでゆっくりやすもう。",
+      "before": "シャツをぬいでゆっくりやすもう。",
+      "after": "シャツをぬいでゆっくりやすもう。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 95,
+      "afterMs": 149
+    },
+    {
+      "id": "holdout-synthetic-sans-serif-36-かっぱがきゅうりをもっている。",
+      "expected": "かっぱがきゅうりをもっている。",
+      "before": "かっぱがきゅうりをもっている。",
+      "after": "かっぱがきゅうりをもっている。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 84,
+      "afterMs": 137
+    },
+    {
+      "id": "holdout-synthetic-sans-serif-36-あっちにちっちゃなはながあるよ。",
+      "expected": "あっちにちっちゃなはながあるよ。",
+      "before": "あっちにちっちゃなはながあるよ。",
+      "after": "あっちにちっちゃなはながあるよ。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 86,
+      "afterMs": 146
+    },
+    {
+      "id": "holdout-synthetic-sans-serif-36-ロボットがジャンプしたよ。",
+      "expected": "ロボットがジャンプしたよ。",
+      "before": "ロボットがジャンプしたよ。",
+      "after": "ロボットがジャンプしたよ。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 77,
+      "afterMs": 120
+    },
+    {
+      "id": "holdout-synthetic-sans-serif-36-よるになったらほしをみよう。",
+      "expected": "よるになったらほしをみよう。",
+      "before": "よるになったらほしをみよう。",
+      "after": "よるになったらほしをみよう。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 82,
+      "afterMs": 132
+    },
+    {
+      "id": "holdout-synthetic-sans-serif-36-つきのひかりがとどくよ。",
+      "expected": "つきのひかりがとどくよ。",
+      "before": "つきのひかりがとどくよ。",
+      "after": "つきのひかりがとどくよ。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 73,
+      "afterMs": 115
+    },
+    {
+      "id": "synthetic-serif-28-しゅっぱつのじゅんびはできた？",
+      "expected": "しゅっぱつのじゅんびはできた？",
+      "before": "しゅっぱつのじゅんびはできた?",
+      "after": "しゅっぱつのじゅんびはできた?",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 86,
+      "afterMs": 144
+    },
+    {
+      "id": "synthetic-serif-28-ちょうちょを見つけたよ。",
+      "expected": "ちょうちょを見つけたよ。",
+      "before": "ちょうちょを見つけたよ。",
+      "after": "ちょうちょを見つけたよ。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 77,
+      "afterMs": 118
+    },
+    {
+      "id": "synthetic-serif-28-きってをはろう。",
+      "expected": "きってをはろう。",
+      "before": "",
+      "after": "",
+      "beforeErrors": 8,
+      "afterErrors": 8,
+      "beforeMs": 3,
+      "afterMs": 5
+    },
+    {
+      "id": "synthetic-serif-28-きつねがいるよ。",
+      "expected": "きつねがいるよ。",
+      "before": "きつねがいるよ。",
+      "after": "きつねがいるよ。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 58,
+      "afterMs": 87
+    },
+    {
+      "id": "synthetic-serif-28-つよいかぜだね。",
+      "expected": "つよいかぜだね。",
+      "before": "つよいかぜだね。",
+      "after": "つよいかぜだね。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 57,
+      "afterMs": 88
+    },
+    {
+      "id": "synthetic-serif-28-きょうはいい日だね。",
+      "expected": "きょうはいい日だね。",
+      "before": "きょうはいい日だね。",
+      "after": "きょうはいい日だね。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 60,
+      "afterMs": 105
+    },
+    {
+      "id": "synthetic-serif-28-きようにつくるね。",
+      "expected": "きようにつくるね。",
+      "before": "きようにつくるね。",
+      "after": "きようにつくるね。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 61,
+      "afterMs": 98
+    },
+    {
+      "id": "synthetic-serif-28-おもちゃをかたづけよう。",
+      "expected": "おもちゃをかたづけよう。",
+      "before": "おもちゃをかたづけよう。",
+      "after": "おもちゃをかたづけよう。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 71,
+      "afterMs": 115
+    },
+    {
+      "id": "synthetic-serif-28-ポッチャマとカイリュー",
+      "expected": "ポッチャマとカイリュー",
+      "before": "ポッチャマとカイリュー",
+      "after": "ポッチャマとカイリュー",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 72,
+      "afterMs": 112
+    },
+    {
+      "id": "synthetic-serif-28-きのみを10こあつめよう。",
+      "expected": "きのみを10こあつめよう。",
+      "before": "きのみを10こあつめよう。",
+      "after": "きのみを10こあつめよう。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 78,
+      "afterMs": 117
+    },
+    {
+      "id": "synthetic-serif-28-ここにいいものがあるよ！",
+      "expected": "ここにいいものがあるよ！",
+      "before": "ここにいいものがあるよ!",
+      "after": "ここにいいものがあるよ!",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 88,
+      "afterMs": 130
+    },
+    {
+      "id": "synthetic-serif-28-いつしようか？",
+      "expected": "いつしようか？",
+      "before": "",
+      "after": "",
+      "beforeErrors": 7,
+      "afterErrors": 7,
+      "beforeMs": 3,
+      "afterMs": 5
+    },
+    {
+      "id": "synthetic-serif-28-きゅうりをきってね。",
+      "expected": "きゅうりをきってね。",
+      "before": "きゅうりをきってね。",
+      "after": "きゅうりをきってね。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 66,
+      "afterMs": 146
+    },
+    {
+      "id": "synthetic-serif-28-しっぽがぴょんとはねた。",
+      "expected": "しっぽがぴょんとはねた。",
+      "before": "しっぽがぴょんとはねた。",
+      "after": "しっぽがぴょんとはねた。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 67,
+      "afterMs": 167
+    },
+    {
+      "id": "synthetic-serif-28-りゅうのいるばしょへ行こう。",
+      "expected": "りゅうのいるばしょへ行こう。",
+      "before": "りゅうのいるばしょへ行こう。",
+      "after": "りゅうのいるばしょへ行こう。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 82,
+      "afterMs": 129
+    },
+    {
+      "id": "synthetic-serif-28-キャベツとキュウリをそだてよう。",
+      "expected": "キャベツとキュウリをそだてよう。",
+      "before": "キャベツとキュウリをそだてよう。",
+      "after": "キャベツとキュウリをそだてよう。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 91,
+      "afterMs": 144
+    },
+    {
+      "id": "synthetic-serif-28-ラッキーにあったよ。",
+      "expected": "ラッキーにあったよ。",
+      "before": "ラッキーにあったよ。",
+      "after": "ラッキーにあったよ。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 68,
+      "afterMs": 101
+    },
+    {
+      "id": "synthetic-serif-28-よっつのはっぱをひろった。",
+      "expected": "よっつのはっぱをひろった。",
+      "before": "よっつのはっぱをひろった。",
+      "after": "よっつのはっぱをひろった。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 78,
+      "afterMs": 124
+    },
+    {
+      "id": "synthetic-serif-28-チョコレートをちょっとだけ。",
+      "expected": "チョコレートをちょっとだけ。",
+      "before": "チョコレートをちょっとだけ。",
+      "after": "チョコレートをちょっとだけ。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 83,
+      "afterMs": 131
+    },
+    {
+      "id": "synthetic-serif-28-シャワーをあびてきたよ。",
+      "expected": "シャワーをあびてきたよ。",
+      "before": "シャワーをあびてきたよ。",
+      "after": "シャワーをあびてきたよ。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 70,
+      "afterMs": 118
+    },
+    {
+      "id": "synthetic-serif-28-あしたはつりに行こう。",
+      "expected": "あしたはつりに行こう。",
+      "before": "あしたはつりに行こう。",
+      "after": "あしたはつりに行こう。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 65,
+      "afterMs": 110
+    },
+    {
+      "id": "synthetic-serif-28-コップにみずをいれよう。",
+      "expected": "コップにみずをいれよう。",
+      "before": "コップにみずをいれよう。",
+      "after": "コップにみずをいれよう。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 69,
+      "afterMs": 115
+    },
+    {
+      "id": "synthetic-serif-28-パンをゆっくりやこう。",
+      "expected": "パンをゆっくりやこう。",
+      "before": "パンをゆっくりやこう。",
+      "after": "パンをゆっくりやこう。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 64,
+      "afterMs": 113
+    },
+    {
+      "id": "synthetic-serif-28-ジュースをいっぽんください。",
+      "expected": "ジュースをいっぽんください。",
+      "before": "ジュースをいっぽんください。",
+      "after": "ジュースをいっぽんください。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 81,
+      "afterMs": 197
+    },
+    {
+      "id": "holdout-synthetic-serif-28-ベッドでぐっすりねむったよ。",
+      "expected": "ベッドでぐっすりねむったよ。",
+      "before": "ベッドでぐっすりねむったよ。",
+      "after": "ベッドでぐっすりねむったよ。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 95,
+      "afterMs": 135
+    },
+    {
+      "id": "holdout-synthetic-serif-28-きゃくしゃにのってしゅっぱつ！",
+      "expected": "きゃくしゃにのってしゅっぱつ！",
+      "before": "きゃくしゃにのってしゅっぱつ!",
+      "after": "きゃくしゃにのってしゅっぱつ!",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 89,
+      "afterMs": 142
+    },
+    {
+      "id": "holdout-synthetic-serif-28-リュックにクッキーをいれよう。",
+      "expected": "リュックにクッキーをいれよう。",
+      "before": "リュックにクッキーをいれよう。",
+      "after": "リュックにクッキーをいれよう。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 90,
+      "afterMs": 135
+    },
+    {
+      "id": "holdout-synthetic-serif-28-ミュウとニャースをさがそう。",
+      "expected": "ミュウとニャースをさがそう。",
+      "before": "ミュウとニャースをさがそう。",
+      "after": "ミュウとニヤースをさがそう。",
+      "beforeErrors": 0,
+      "afterErrors": 1,
+      "beforeMs": 81,
+      "afterMs": 128
+    },
+    {
+      "id": "holdout-synthetic-serif-28-りょうりをいっしょにつくろう。",
+      "expected": "りょうりをいっしょにつくろう。",
+      "before": "りょうりをいっしょにつくろう。",
+      "after": "りょうりをいっしょにつくろう。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 84,
+      "afterMs": 197
+    },
+    {
+      "id": "holdout-synthetic-serif-28-おおきなコップとちいさなカップ。",
+      "expected": "おおきなコップとちいさなカップ。",
+      "before": "おおきなコップとちいさなカップ",
+      "after": "おおきなコップとちいさなカップ。",
+      "beforeErrors": 1,
+      "afterErrors": 0,
+      "beforeMs": 89,
+      "afterMs": 143
+    },
+    {
+      "id": "holdout-synthetic-serif-28-シャツをぬいでゆっくりやすもう。",
+      "expected": "シャツをぬいでゆっくりやすもう。",
+      "before": "シャツをぬいでゆっくりやすもう。",
+      "after": "シャツをぬいでゆっくりやすもう。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 93,
+      "afterMs": 150
+    },
+    {
+      "id": "holdout-synthetic-serif-28-かっぱがきゅうりをもっている。",
+      "expected": "かっぱがきゅうりをもっている。",
+      "before": "かっぱがきゅうりをもっている。",
+      "after": "かつぱがきゅうりをもっている。",
+      "beforeErrors": 0,
+      "afterErrors": 1,
+      "beforeMs": 83,
+      "afterMs": 218
+    },
+    {
+      "id": "holdout-synthetic-serif-28-あっちにちっちゃなはながあるよ。",
+      "expected": "あっちにちっちゃなはながあるよ。",
+      "before": "あっちにちっちゃなはながあるよ。",
+      "after": "あっちにちっちゃなはながあるよ。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 136,
+      "afterMs": 159
+    },
+    {
+      "id": "holdout-synthetic-serif-28-ロボットがジャンプしたよ。",
+      "expected": "ロボットがジャンプしたよ。",
+      "before": "ロボットがジャンプしたよ。",
+      "after": "ロボットがジャンプしたよ。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 84,
+      "afterMs": 118
+    },
+    {
+      "id": "holdout-synthetic-serif-28-よるになったらほしをみよう。",
+      "expected": "よるになったらほしをみよう。",
+      "before": "よるになったらほしをみよう。",
+      "after": "よるになったらほしをみよう。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 81,
+      "afterMs": 133
+    },
+    {
+      "id": "holdout-synthetic-serif-28-つきのひかりがとどくよ。",
+      "expected": "つきのひかりがとどくよ。",
+      "before": "つきのひかりがとどくよ。",
+      "after": "つきのひかりがとどくよ。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 75,
+      "afterMs": 117
+    },
+    {
+      "id": "synthetic-serif-36-しゅっぱつのじゅんびはできた？",
+      "expected": "しゅっぱつのじゅんびはできた？",
+      "before": "しゅっぱつのじゅんびはできた?",
+      "after": "しゅっぱつのじゅんびはできた?",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 93,
+      "afterMs": 142
+    },
+    {
+      "id": "synthetic-serif-36-ちょうちょを見つけたよ。",
+      "expected": "ちょうちょを見つけたよ。",
+      "before": "ちょうちょを見つけたよ。",
+      "after": "ちょうちょを見つけたよ。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 68,
+      "afterMs": 112
+    },
+    {
+      "id": "synthetic-serif-36-きってをはろう。",
+      "expected": "きってをはろう。",
+      "before": "きってをはろう。",
+      "after": "きってをはろう。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 54,
+      "afterMs": 84
+    },
+    {
+      "id": "synthetic-serif-36-きつねがいるよ。",
+      "expected": "きつねがいるよ。",
+      "before": "きつねがいるよ。",
+      "after": "きつねがいるよ。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 57,
+      "afterMs": 91
+    },
+    {
+      "id": "synthetic-serif-36-つよいかぜだね。",
+      "expected": "つよいかぜだね。",
+      "before": "つよいかぜだね。",
+      "after": "つよいかぜだね。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 54,
+      "afterMs": 87
+    },
+    {
+      "id": "synthetic-serif-36-きょうはいい日だね。",
+      "expected": "きょうはいい日だね。",
+      "before": "きょうはいい日だね。",
+      "after": "きょうはいい日だね。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 62,
+      "afterMs": 103
+    },
+    {
+      "id": "synthetic-serif-36-きようにつくるね。",
+      "expected": "きようにつくるね。",
+      "before": "きようにつくるね。",
+      "after": "きようにつくるね。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 59,
+      "afterMs": 91
+    },
+    {
+      "id": "synthetic-serif-36-おもちゃをかたづけよう。",
+      "expected": "おもちゃをかたづけよう。",
+      "before": "おもちゃをかたづけよう。",
+      "after": "おもちゃをかたづけよう。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 70,
+      "afterMs": 113
+    },
+    {
+      "id": "synthetic-serif-36-ポッチャマとカイリュー",
+      "expected": "ポッチャマとカイリュー",
+      "before": "ポッチャマとカイリュー",
+      "after": "ポッチャマとカイリュー",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 77,
+      "afterMs": 118
+    },
+    {
+      "id": "synthetic-serif-36-きのみを10こあつめよう。",
+      "expected": "きのみを10こあつめよう。",
+      "before": "きのみを10こあつめよう。",
+      "after": "きのみを10こあつめよう。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 74,
+      "afterMs": 128
+    },
+    {
+      "id": "synthetic-serif-36-ここにいいものがあるよ！",
+      "expected": "ここにいいものがあるよ！",
+      "before": "ここにいいものがあるよ!",
+      "after": "ここにいいものがあるよ!",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 75,
+      "afterMs": 125
+    },
+    {
+      "id": "synthetic-serif-36-いつしようか？",
+      "expected": "いつしようか？",
+      "before": "いつしようか?",
+      "after": "いつしようか?",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 67,
+      "afterMs": 83
+    },
+    {
+      "id": "synthetic-serif-36-きゅうりをきってね。",
+      "expected": "きゅうりをきってね。",
+      "before": "きゅうりをきってね。",
+      "after": "きゅうりをきってね。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 62,
+      "afterMs": 130
+    },
+    {
+      "id": "synthetic-serif-36-しっぽがぴょんとはねた。",
+      "expected": "しっぽがぴょんとはねた。",
+      "before": "しっぽがぴょんとはねた。",
+      "after": "しっぽがぴょんとはねた。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 70,
+      "afterMs": 156
+    },
+    {
+      "id": "synthetic-serif-36-りゅうのいるばしょへ行こう。",
+      "expected": "りゅうのいるばしょへ行こう。",
+      "before": "りゅうのいるばしょへ行こう。",
+      "after": "りゅうのいるばしょへ行こう。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 76,
+      "afterMs": 126
+    },
+    {
+      "id": "synthetic-serif-36-キャベツとキュウリをそだてよう。",
+      "expected": "キャベツとキュウリをそだてよう。",
+      "before": "キャベツとキュウリをそだてよう。",
+      "after": "キャベツとキュウリをそだてよう。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 88,
+      "afterMs": 137
+    },
+    {
+      "id": "synthetic-serif-36-ラッキーにあったよ。",
+      "expected": "ラッキーにあったよ。",
+      "before": "ラッキーにあったよ。",
+      "after": "ラッキーにあったよ。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 69,
+      "afterMs": 99
+    },
+    {
+      "id": "synthetic-serif-36-よっつのはっぱをひろった。",
+      "expected": "よっつのはっぱをひろった。",
+      "before": "よっつのはっぱをひろった。",
+      "after": "よっつのはっぱをひろった。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 78,
+      "afterMs": 118
+    },
+    {
+      "id": "synthetic-serif-36-チョコレートをちょっとだけ。",
+      "expected": "チョコレートをちょっとだけ。",
+      "before": "チョコレートをちょっとだけ。",
+      "after": "チョコレートをちょっとだけ。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 78,
+      "afterMs": 131
+    },
+    {
+      "id": "synthetic-serif-36-シャワーをあびてきたよ。",
+      "expected": "シャワーをあびてきたよ。",
+      "before": "シャワーをあびてきたよ。",
+      "after": "シャワーをあびてきたよ。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 71,
+      "afterMs": 116
+    },
+    {
+      "id": "synthetic-serif-36-あしたはつりに行こう。",
+      "expected": "あしたはつりに行こう。",
+      "before": "あしたはつりに行こう。",
+      "after": "あしたはつりに行こう。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 77,
+      "afterMs": 102
+    },
+    {
+      "id": "synthetic-serif-36-コップにみずをいれよう。",
+      "expected": "コップにみずをいれよう。",
+      "before": "コップにみずをいれよう。",
+      "after": "コップにみずをいれよう。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 85,
+      "afterMs": 113
+    },
+    {
+      "id": "synthetic-serif-36-パンをゆっくりやこう。",
+      "expected": "パンをゆっくりやこう。",
+      "before": "パンをゆっくりやこう。",
+      "after": "パンをゆっくりやこう。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 78,
+      "afterMs": 109
+    },
+    {
+      "id": "synthetic-serif-36-ジュースをいっぽんください。",
+      "expected": "ジュースをいっぽんください。",
+      "before": "ジュースをいっぽんください。",
+      "after": "ジュースをいっぽんください。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 83,
+      "afterMs": 132
+    },
+    {
+      "id": "holdout-synthetic-serif-36-ベッドでぐっすりねむったよ。",
+      "expected": "ベッドでぐっすりねむったよ。",
+      "before": "ベッドでぐっすりねむったよ。",
+      "after": "ベッドでぐっすりねむったよ。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 80,
+      "afterMs": 128
+    },
+    {
+      "id": "holdout-synthetic-serif-36-きゃくしゃにのってしゅっぱつ！",
+      "expected": "きゃくしゃにのってしゅっぱつ！",
+      "before": "きゃくしゃにのってしゆっぱつ!",
+      "after": "きゃくしゃにのってしゅっぱつ!",
+      "beforeErrors": 1,
+      "afterErrors": 0,
+      "beforeMs": 85,
+      "afterMs": 138
+    },
+    {
+      "id": "holdout-synthetic-serif-36-リュックにクッキーをいれよう。",
+      "expected": "リュックにクッキーをいれよう。",
+      "before": "リュックにクッキーをいれよう。",
+      "after": "リュックにクッキーをいれよう。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 86,
+      "afterMs": 140
+    },
+    {
+      "id": "holdout-synthetic-serif-36-ミュウとニャースをさがそう。",
+      "expected": "ミュウとニャースをさがそう。",
+      "before": "ミュウとニャースをさがそう。",
+      "after": "ミュウとニヤースをさがそう。",
+      "beforeErrors": 0,
+      "afterErrors": 1,
+      "beforeMs": 87,
+      "afterMs": 184
+    },
+    {
+      "id": "holdout-synthetic-serif-36-りょうりをいっしょにつくろう。",
+      "expected": "りょうりをいっしょにつくろう。",
+      "before": "りょうりをいっしょにつくろう。",
+      "after": "りようりをいっしょにつくろう。",
+      "beforeErrors": 0,
+      "afterErrors": 1,
+      "beforeMs": 81,
+      "afterMs": 191
+    },
+    {
+      "id": "holdout-synthetic-serif-36-おおきなコップとちいさなカップ。",
+      "expected": "おおきなコップとちいさなカップ。",
+      "before": "おおきなコップとちいさなカップ",
+      "after": "おおきなコップとちいさなカップ。",
+      "beforeErrors": 1,
+      "afterErrors": 0,
+      "beforeMs": 89,
+      "afterMs": 136
+    },
+    {
+      "id": "holdout-synthetic-serif-36-シャツをぬいでゆっくりやすもう。",
+      "expected": "シャツをぬいでゆっくりやすもう。",
+      "before": "シャツをぬいでゆっくりやすもう。",
+      "after": "シャツをぬいでゆっくりやすもう。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 87,
+      "afterMs": 143
+    },
+    {
+      "id": "holdout-synthetic-serif-36-かっぱがきゅうりをもっている。",
+      "expected": "かっぱがきゅうりをもっている。",
+      "before": "かっぱがきゅうりをもっている。",
+      "after": "かつぱがきゅうりをもっている。",
+      "beforeErrors": 0,
+      "afterErrors": 1,
+      "beforeMs": 79,
+      "afterMs": 187
+    },
+    {
+      "id": "holdout-synthetic-serif-36-あっちにちっちゃなはながあるよ。",
+      "expected": "あっちにちっちゃなはながあるよ。",
+      "before": "あっちにちっちゃなはながあるよ。",
+      "after": "あっちにちっちゃなはながあるよ。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 89,
+      "afterMs": 142
+    },
+    {
+      "id": "holdout-synthetic-serif-36-ロボットがジャンプしたよ。",
+      "expected": "ロボットがジャンプしたよ。",
+      "before": "ロボットがジャンプしたよ。",
+      "after": "ロボットがジャンプしたよ。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 73,
+      "afterMs": 119
+    },
+    {
+      "id": "holdout-synthetic-serif-36-よるになったらほしをみよう。",
+      "expected": "よるになったらほしをみよう。",
+      "before": "よるになったらほしをみよう。",
+      "after": "よるになったらほしをみよう。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 83,
+      "afterMs": 130
+    },
+    {
+      "id": "holdout-synthetic-serif-36-つきのひかりがとどくよ。",
+      "expected": "つきのひかりがとどくよ。",
+      "before": "つきのひかりがとどくよ。",
+      "after": "つきのひかりがとどくよ。",
+      "beforeErrors": 0,
+      "afterErrors": 0,
+      "beforeMs": 72,
+      "afterMs": 115
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+<!doctype html><html lang="ja"><meta charset="utf-8"><title>OCR image verification — local only</title><h1>会話画像の検証</h1><pre id="result">実行中</pre><div id="pictures"></div><script type="module">
+import { LocalReader } from '/src/ocr.js';
+const reader = new LocalReader();
+const baseline = new URLSearchParams(location.search).has('compare') ? new (await import('/__baseline/src/ocr.js')).LocalReader() : null;
+const original = new Image(); original.src = './reference.webp'; await original.decode();
+const results = [];
+for (const scenario of ['original', 'portrait-offset', 'small-screen', 'tilted', 'no-dialogue']) {
+  const canvas = document.createElement('canvas');
+  canvas.width = scenario === 'portrait-offset' ? 1080 : 1280;
+  canvas.height = scenario === 'portrait-offset' ? 1920 : 720;
+  if (scenario === 'original') { canvas.width = original.width; canvas.height = original.height; }
+  const ctx = canvas.getContext('2d');
+  ctx.fillStyle = '#252d29'; ctx.fillRect(0, 0, canvas.width, canvas.height);
+  if (scenario === 'original') ctx.drawImage(original, 0, 0);
+  if (scenario === 'portrait-offset') ctx.drawImage(original, 60, 600, 960, 540);
+  if (scenario === 'small-screen') ctx.drawImage(original, 230, 170, 820, 461);
+  if (scenario === 'tilted') { ctx.translate(640, 360); ctx.rotate(4 * Math.PI / 180); ctx.drawImage(original, -560, -315, 1120, 630); }
+  const start = performance.now();
+  const result = await reader.recognize(canvas);
+  const ms=Math.round(performance.now()-start);
+  const before=baseline ? await baseline.recognize(canvas) : {text:''};
+  const expected = '今日はどこまでお出かけするの?オイラでよければいっしょに行くよ';
+  const actual = result.text.replace(/\s+/g, '');
+  results.push({ scenario, pass: scenario === 'no-dialogue' ? result.text === '' : actual === expected, text: result.text, rawText:result.rawText, before:before.text, confidence: result.confidence, panel: result.panel, crop: reader.diagnostics, ms });
+  if (result.panel) { const label = document.createElement('p'); label.textContent = scenario; const img = document.createElement('img'); img.src = reader.rotated.toDataURL(); img.style.maxWidth='100%'; document.getElementById('pictures').append(label,img); }
+  document.getElementById('result').textContent = JSON.stringify(results, null, 2);
+}
+
+const synthetic=[];
+for (const sentence of ['ここにいいものがあるよ！','きのみを10こあつめよう。','ピカチュウといっしょにあそぼう！','きょうはおでかけしよう！']) {
+ const canvas=document.createElement('canvas');canvas.width=1280;canvas.height=720;
+ const ctx=canvas.getContext('2d');ctx.fillStyle='#8aab78';ctx.fillRect(0,0,1280,720);
+ ctx.fillStyle='#bb9ee8';ctx.beginPath();ctx.roundRect(220,530,840,180,60);ctx.fill();
+ ctx.fillStyle='#fafafa';ctx.beginPath();ctx.roundRect(235,545,810,150,50);ctx.fill();
+ ctx.fillStyle='#303638';ctx.font='32px sans-serif';ctx.fillText(sentence,275,615);
+ const result=await reader.recognize(canvas), before=baseline ? await baseline.recognize(canvas) : {text:''};
+ synthetic.push({sentence,text:result.text,before:before.text,pass:result.text===sentence.normalize('NFKC')});
+}
+const pre=document.createElement('pre');pre.id='synthetic';pre.textContent=JSON.stringify(synthetic,null,2);document.body.prepend(pre);
+document.body.dataset.complete = 'true';
+</script></html>
