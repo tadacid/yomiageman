@@ -56,6 +56,18 @@ http://127.0.0.1:4173/ はMacのローカル検証用です。iPhoneでは公開
 
 実画像検証は `docs/文字認識-v04.md` の手順を参照してください。
 
+## 公開の手順
+
+このフォルダ（GitHub: tadacid/yomiageman）が唯一のソースです。`sites/yomiageman/` はChatGPT Sitesで公開するためのコピーで、直接編集しません（このリポジトリには含めていません）。
+
+```sh
+npm test
+npm run build
+npm run sync:site
+```
+
+`sync:site` は `web/`・`dist/`・`docs/`・`scripts/`・`tests/`・README・package類を `sites/yomiageman/` へ上書きコピーします。公開用コピー側のファイルは削除せず、こちらにないファイルがあれば一覧を表示します。その後、ChatGPT Sitesで公開します。
+
 ## 一次資料
 
 - [公式PP-OCRv6 small ONNXモデル](https://huggingface.co/PaddlePaddle/PP-OCRv6_small_rec_onnx)
